@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+    .attribution { font-size: 11px; text-align: center; margin-top: 50px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* styling body */
+    body{
+      background-color: hsl(217, 54%, 11%);
+      text-align: left;
+      font-family: 'Outfit', sans-serif;;
+    }
+
+    /* styling the container */
+    .container{
+      width: 50%;
+      min-height: 39dvi;
+      margin: auto;
+      display: flex;
+    }
+    .inside-container{
+      width: 40%;
+      margin: auto;
+      padding: 20px;
+      border-radius: 10px;
+      background-color: hsl(216, 50%, 16%);
+      position: relative;
+    }
+
+    /* styling images */
+    .equilibrium{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .avator{
+      width: 10%;
+      border: 1px solid #fff;
+      border-radius: 100%;
+    }
+    
+
+    /* others */
+
+    h2{
+      color: #fff;
+      font-weight: 600;
+    }
+    .description{
+      color: hsl(215, 51%, 70%);
+    }
+    p{
+      width: fit-content;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 0;
+      margin-bottom: 0;
+      font-weight: 300;
+    }
+    
+    .justify, .justify-content, .clock-day{
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .justify p{
+      margin: auto 0;
+    }
+    .justify-content p{
+      margin: auto 10px;
+    }
+    .justify img{
+      padding-right: 10px;
+    }
+    .cyan{
+      color: hsl(178, 100%, 50%);
+      font-weight: 600;
+    }
+    .clock{
+      margin-left: 40px;
+    }
+    hr{
+      border: none;
+      border-bottom: 1px solid hsl(215, 32%, 27%);
+    }
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+    .justify-content{
+      margin-bottom: 0;
+    }
+
+    /* media queries */
+    @media (max-width:425px){
+      .container{
+        width: 90%;
+      }
+      .inside-container{
+        width: 100%;
+      }
+    }
+    @media (min-width: 426px) and (max-width:768px){
+      .container{
+        width: 70%;
+      }
+      .inside-container{
+        width: 100%;
+      }
+    }
+    @media (min-width: 769px) and (max-width:1024px){
+      .container{
+        width: 35%;
+      }
+      .inside-container{
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="inside-container">
+      <div class="card">
+        <div class="card-image">
+          <img class="equilibrium" src="images/image-equilibrium.jpg" alt="image-equilibrium">
+        </div>
+        <div class="description">
+          <h2>Equilibrium #3429</h2>
+          <p class="description">Our Equilibrium collection promotes balance and calm.</p>
+          <div class="justify">
+            <img src="images/icon-ethereum.svg" alt="icon-ethereum">
+            <p class="cyan">0.041 ETH</p>
+            <div class="clock-day" style="position:absolute; right:20px;">
+            <img class="clock" src="images/icon-clock.svg" alt="icon-clock">
+            <P>3 days left</P>
+            </div>
+          </div>
+          <hr>
+          <div class="justify-content">
+            <img class="avator" src="images/image-avatar.png" alt="image-avatar">
+            <P>Creation of <a href="#">Jules Wyvern</a></P>
+          </div>
+          
+          
+           
+          
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Haileleul4337">Haileleul Girma Mekonnen</a>.
+  </div>
+</body>
+</html>
